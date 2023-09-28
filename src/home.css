@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(./steak.jpg); 
+    background-size: cover;
+}
+
+#content {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#headline {
+    padding: 30px;
+    height: 70px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 40px;
+}
+
+#nav {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#page {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#ad {
+    padding: 60px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 600px;
+    width: 600px;
+    color: white;
+
+}
