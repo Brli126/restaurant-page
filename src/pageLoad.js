@@ -1,21 +1,39 @@
 import './home.css';
 
 function components() {
+    const content = document.querySelector('#content');
     const headline = document.createElement('div');
     const navBar = document.createElement('div');
-    const ad = document.createElement('div');
+    const container = document.createElement('div');
     const pageContainer = document.createElement('div');
+    const homeTab = document.createElement('button');
+    const menuTab = document.createElement('button');
+    const contactTab = document.createElement('button');
+
+    homeTab.textContent = 'Home';
+    homeTab.classList.add('home');
+    menuTab.textContent = 'Menu';
+    menuTab.classList.add('menu');
+    contactTab.textContent = 'Contact';
+    contactTab.classList.add('contact');
 
 
     headline.textContent = 'SH SteakHouse';
     headline.setAttribute('id', 'headline');
-    navBar.setAttribute('id', 'nav');
-    ad.setAttribute('id', 'ad');
-    ad.textContent ='Savor the best in steak at our premier restaurant. We pride ourselves on expertly grilled, hand-selected cuts of beef, from tender filet mignon to flavorful ribeyes. Our inviting ambiance, exceptional service, and fine wine selection ensure a memorable dining experience. Join us for a culinary journey celebrating the art of steak. Reserve your table now.'
-    pageContainer.setAttribute('id', 'page');
-    pageContainer.appendChild(ad);
 
-    return {headline, pageContainer};
+    navBar.setAttribute('id', 'nav');
+    navBar.appendChild(homeTab);
+    navBar.appendChild(menuTab);
+    navBar.appendChild(contactTab);
+
+    container.setAttribute('id', 'container');
+    container.appendChild(pageContainer)
+
+    pageContainer.setAttribute('id', 'page');
+
+    content.appendChild(headline);
+    content.appendChild(navBar);
+    content.appendChild(container);
 
 
 }

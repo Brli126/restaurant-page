@@ -21,23 +21,52 @@ body {
 }
 
 #nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
     height: 100px;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-#page {
+button {
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+}
+
+#container {
     padding: 100px;
     display: flex;
     justify-content: center;
 
 }
 
-#ad {
+#page {
     padding: 60px;
-    font-size: 25px;
     background-color: rgba(0, 0, 0, 0.7);
     height: 600px;
     width: 600px;
     color: white;
 
+}
+
+
+
+#ad {
+    font-size: 25px;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    justify-items: center;
+}
+
+
+img.menu {
+    width: 230px;
+    height: 230px;
 }
