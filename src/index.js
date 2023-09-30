@@ -1,6 +1,7 @@
 import { components } from './pageLoad';
 import { homeMessage } from './home';
 import { menuComp } from './menu';
+import { contactComp } from './contact';
 
 // Create the backbone component of the restaurant page.
 components();
@@ -18,7 +19,7 @@ homeMessage();
 
 homeTab.addEventListener('click', () => switchTabto(homeMessage));
 menuTab.addEventListener('click', () => switchTabto(menuComp));
-//contactTab.addEventListener('click', switchTabto());
+contactTab.addEventListener('click', () => switchTabto(contactComp));
 
 function switchActive(node) {
    const status = node.getAttribute('data-isActive');

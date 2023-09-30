@@ -70,3 +70,20 @@ img.menu {
     width: 230px;
     height: 230px;
 }
+
+#contact {
+    display: grid;
+    gap: 20px;
+    font-size: 30px;
+
+}
+
+.infoContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.menuIcon {
+    width: 25px;
+    height: 25px;
+}
